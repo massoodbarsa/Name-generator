@@ -15,9 +15,9 @@ Redux and MobX are examples of libraries that provide such centralized state. In
 ## Planning
 | Week | Read | Homework |
 | ---- | ---- | -------- |
-| 1. | No reading | [Week 1 Homework](https://github.com/HackYourFuture/React2/blob/master/homework/Week%1.md) |
-| 2. | TBA | [Week 2 Homework](https://github.com/HackYourFuture/React2/blob/master/homework/Week%2.md) |
-| 3. | TBA | [Week 3 Homework](https://github.com/HackYourFuture/React2/blob/master/homework/Week%3.md) |
+| 1. | No reading | [Week 1 Homework](https://github.com/HackYourFuture/React2/blob/master/homework/Week%201.md) |
+| 2. | TBA | [Week 2 Homework](https://github.com/HackYourFuture/React2/blob/master/homework/Week%202.md) |
+| 3. | TBA | [Week 3 Homework](https://github.com/HackYourFuture/React2/blob/master/homework/Week%203.md) |
 
 ## Handing in homework
 
