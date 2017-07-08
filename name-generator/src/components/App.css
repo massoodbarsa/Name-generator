@@ -1,0 +1,13 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #efefef; }
+
+.App-state {
+  font: 14px monospace;
+  white-space: pre-wrap;
+  background: white;
+  padding: 24px; }
