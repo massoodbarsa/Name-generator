@@ -1,11 +1,13 @@
+// Don't look at this file, unless you really want to, menyuch!!
+
+import initialState from './initialState'
+
 class Store {
 
 	//------
 	// State
 
-	state = {
-		counter: 1
-	}
+	state = initialState
 
 	setState(updates) {
 		Object.assign(this.state, updates)

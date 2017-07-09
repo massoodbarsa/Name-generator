@@ -7,7 +7,7 @@ class App extends Component {
 
   componentWillMount() {
     this.subscription = store.subscribe(state => {
-      this.setState(state)
+      this.setState({counter: state.counter})
     })
   }
 
@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-state">
-          {JSON.stringify(this.state)}
+          {JSON.stringify(this.state.counter)}
         </div>
 
         <IncreaseButton/>
