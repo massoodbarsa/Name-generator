@@ -19,10 +19,13 @@ class Store {
 
 	subscribe(handler) {
 		this.handlers.add(handler)
-	}
+		handler(this.state)
 
-	unsubscribe(handler) {
-		this.handlers.delete(handler)
+		return {
+			remove: () => {
+				this.handlers.delete(handler)
+			}
+		}
 	}
 
 	notify() {

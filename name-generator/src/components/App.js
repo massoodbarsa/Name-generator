@@ -5,19 +5,15 @@ import './App.css';
 
 class App extends Component {
 
-  state = store.state;
-
-  componentDidMount() {
-    store.subscribe(this.onStateChange);
+  componentWillMount() {
+    this.subscription = store.subscribe(state => {
+      this.setState(state)
+    })
   }
 
   componentWillUnmount() {
-    store.unsubscribe();
+    this.subscription.remove();
   }
-
-  onStateChange = newState => {
-    this.setState(newState);
-  };
 
   render() {
     return (
