@@ -18,11 +18,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-state">
-          {JSON.stringify(this.state.counter)}
-        </div>
-
-        <IncreaseButton/>
       </div>
     );
   }
