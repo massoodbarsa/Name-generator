@@ -11,8 +11,8 @@ class Store {
 		return this.state[key]
 	}
 
-	set(key, value) {
-		this.state[key] = value
+	setState(updates) {
+		Object.assign(this.state, updates)
 		this.notify()
 	}
 

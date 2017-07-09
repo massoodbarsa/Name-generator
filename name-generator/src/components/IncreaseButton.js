@@ -10,5 +10,5 @@ export default function IncreaseButton() {
 }
 
 function increase() {
-	store.set('counter', store.get('counter') + 1)
+	store.setState({counter: store.state.counter + 1})
 }
