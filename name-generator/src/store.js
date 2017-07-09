@@ -7,10 +7,6 @@ class Store {
 		counter: 1
 	}
 
-	get(key) {
-		return this.state[key]
-	}
-
 	setState(updates) {
 		Object.assign(this.state, updates)
 		this.notify()
