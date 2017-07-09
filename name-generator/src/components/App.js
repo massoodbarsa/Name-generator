@@ -1,35 +1,49 @@
-import React, { Component } from 'react';
-import store from '../store';
-import {IncreaseButton} from '.'
-import './App.css';
+import React, { Component } from 'react'
+import store from '../store'
+import {Logo, Form, Button} from '.'
+import * as generators from '../generators'
+import './App.css'
 
-class App extends Component {
+export default class App extends Component {
 
-  state = store.state;
+  generateName() {
+    const {form} = this.state
+    const Generator = generators[form.theme]
+    const generator = new Generator(form)
+    store.setState({generating: true})
 
-  componentDidMount() {
-    store.subscribe(this.onStateChange);
+    generator.generate().then(result => {
+      store.setState({generating: false, result})
+    })
+  }
+
+  componentWillMount() {
+    this.subscription = store.subscribe(state => {
+      this.setState(state)
+    })
   }
 
   componentWillUnmount() {
-    store.unsubscribe();
+    this.subscription.unsubscribe()
   }
-
-  onStateChange = newState => {
-    this.setState(newState);
-  };
 
   render() {
+    const {form} = this.state
+
     return (
       <div className="App">
-        <div className="App-state">
-          {JSON.stringify(this.state)}
+        <Logo/>
+        <Form data={form}/>
+
+        <div className="App-buttons">
+          <Button label="GENERATE" onPress={this.onGeneratePress.bind(this)}/>
         </div>
-
-        <IncreaseButton/>
       </div>
-    );
+    )
   }
-}
 
-export default App;
+  onGeneratePress() {
+    this.generateName()
+  }
+
+}

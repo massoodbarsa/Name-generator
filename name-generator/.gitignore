@@ -8,3 +8,7 @@
 
 # production
 /build
+
+# Sublime
+*.sublime-project
+*.sublime-workspace

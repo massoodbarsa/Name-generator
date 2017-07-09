@@ -1,0 +1,28 @@
+@import "../variables";
+
+.Form {
+	@include flex-column;
+
+	margin-top:   $padding-l;
+	margin-right: 30%;
+}
+
+.Form-row {
+	margin-top: $padding-l;
+}
+
+.Form-row-content {
+	margin-top: $padding-s;
+}
+
+input[type="text"] {
+	height:  48px;
+	width:   100%;
+	padding: $padding-input;
+
+	background: $bg-color-input;
+	color:      $fg-color-input;
+
+	border:     none;
+	box-shadow: $shadow-input;
+}

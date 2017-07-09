@@ -4,11 +4,12 @@ class Store {
 	// State
 
 	state = {
-		counter: 1
-	}
+		generating: false,
+		result:     null,
 
-	get(key) {
-		return this.state[key]
+		form: {
+			ownName: null
+		}
 	}
 
 	setState(updates) {
@@ -23,10 +24,13 @@ class Store {
 
 	subscribe(handler) {
 		this.handlers.add(handler)
-	}
+		handler(this.state)
 
-	unsubscribe(handler) {
-		this.handlers.delete(handler)
+		return {
+			remove: () => {
+				this.handlers.delete(handler)
+			}
+		}
 	}
 
 	notify() {

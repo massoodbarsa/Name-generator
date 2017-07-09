@@ -2,12 +2,14 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #efefef; }
+  align-items: stretch;
+  background: linear-gradient(to bottom, #A7C5ED, #E3ECF9 70%, #97D2AC);
+  padding: 32px;
+  font: 24px "Alpha Smart", monospace;
+  color: black; }
 
-.App-state {
-  font: 14px monospace;
-  white-space: pre-wrap;
-  background: white;
-  padding: 24px; }
+.App-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 32px; }
