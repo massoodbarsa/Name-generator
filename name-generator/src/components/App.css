@@ -2,12 +2,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #efefef; }
-
-.App-state {
-  font: 14px monospace;
-  white-space: pre-wrap;
-  background: white;
+  background: #efefef;
   padding: 24px; }
+
+.App-generatorForm {
+  margin-top: 24px; }
+
+.App-generateButton {
+  margin-top: 24px; }

@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
-import store from '../store';
-import './App.css';
+import React, { Component } from 'react'
+import Header from './Header'
+import GeneratorForm from './GeneratorForm'
+import Button from './Button'
+import store from '../store'
+import './App.css'
 
 class App extends Component {
 
@@ -11,15 +14,24 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    this.subscription.remove();
+    this.subscription.remove()
   }
 
   render() {
     return (
       <div className="App">
+        <Header/>
+
+        <div className="App-generatorForm">
+          <GeneratorForm/>
+        </div>
+
+        <div className="App-generateButton">
+          <Button/>
+        </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
