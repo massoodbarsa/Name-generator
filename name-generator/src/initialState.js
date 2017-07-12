@@ -1,3 +1,9 @@
 export default {
-	counter: 1
-}
+form:{
+	name:'',
+	email:''
+
+},
+generator:false
+
+	}

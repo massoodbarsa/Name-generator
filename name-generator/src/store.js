@@ -4,8 +4,7 @@ import initialState from './initialState'
 
 class Store {
 
-	//------
-	// State
+
 
 	state = initialState
 

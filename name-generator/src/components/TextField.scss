@@ -1,0 +1,10 @@
+@import "../variables";
+
+.TextField{
+  display: block;
+}
+
+.TextField-label{
+  margin: $padding-xs ;
+  width:50%
+}

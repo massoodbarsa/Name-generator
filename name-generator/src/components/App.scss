@@ -1,17 +1,23 @@
 @import "../variables";
 
 .App {
-  height: 100vh;
+  position: relative;
+  padding:$padding-l;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   background: #efefef;
+  background-color: $primary-color;
+  color: $secondry-color
+
 }
 
-.App-state {
-  font: 14px monospace;
-  white-space: pre-wrap;
-  background: white;
-  padding: $padding-m;
+.App-buttonGeneretor{
+  margin-top: $padding-l;
+}
+
+.App-form{
+
+  margin-top: $padding-l;
+
 }
