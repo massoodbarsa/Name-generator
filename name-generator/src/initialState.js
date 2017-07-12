@@ -1,9 +1,8 @@
 export default {
-form:{
-	name:'',
-	email:''
+  form: {
+    name: '',
+    email: ''
+  },
+  generator: false
 
-},
-generator:false
-
-	}
+}

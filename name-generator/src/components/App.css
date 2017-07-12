@@ -1,3 +1,4 @@
+
 .App {
   position: relative;
   padding: 32px;
@@ -6,10 +7,32 @@
   justify-content: center;
   background: #efefef;
   background-color: #000033;
-  color: #e6e6ff; }
+  color: #e6e6ff;
+}
+.Button-area{
+  display: inline-block;
+}
 
 .App-buttonGeneretor {
-  margin-top: 32px; }
+  margin-top: 32px;
+  width: 50%;
+}
 
 .App-form {
-  margin-top: 32px; }
+  margin-top: 32px;
+}
+
+.Message{
+  padding: 10px;
+  margin-left: 30%;
+  width: 100%
+}
+.Message-list{
+  list-style-type: none;
+  font-size: 22px;
+  font-family:Verdana;
+}
+.span{
+  color:  #4d4dff
+
+}
