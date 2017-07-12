@@ -4,7 +4,17 @@
   background-color: #1a53ff;
   border: none;
   padding: $padding-xs;
-  font-size: 15px;
+  font-size: 18px;
   color: #e6ecff;
-  border-radius: 5px
+  border-radius: 5px;
+  margin-left: $padding-xs;
+}
+
+.Button:hover {
+  background-color: #e6ecff;
+  color: #1a53ff;
+}
+
+.Button:active {
+  outline: none;
 }

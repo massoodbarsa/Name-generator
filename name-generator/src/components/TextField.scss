@@ -2,9 +2,15 @@
 
 .TextField{
   display: block;
+  margin-top: $padding-s;
+  font-size: 18px;
+
 }
 
 .TextField-label{
   margin: $padding-xs ;
-  width:50%
+  width:50%;
+  padding: $padding-xs;
+  font-size: 15px;
+  border-radius: 5px
 }

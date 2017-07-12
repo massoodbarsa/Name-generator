@@ -2,6 +2,14 @@
   background-color: #1a53ff;
   border: none;
   padding: 8px;
-  font-size: 15px;
+  font-size: 18px;
   color: #e6ecff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-left: 8px; }
+
+.Button:hover {
+  background-color: #e6ecff;
+  color: #1a53ff; }
+
+.Button:active {
+  outline: none; }
