@@ -17,7 +17,20 @@
 }
 
 .App-form{
-
   margin-top: $padding-l;
+}
+
+.Message-list{
+  list-style-type: none;
+  font-size: 22px;
+  font-family: fantasy;
+  font-weight: bold;
+}
+.Message{
+  margin-left: 40%
+}
+.span{
+  color: #6666ff
+
 
 }

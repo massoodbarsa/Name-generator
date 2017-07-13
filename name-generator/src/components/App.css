@@ -1,4 +1,3 @@
-
 .App {
   position: relative;
   padding: 32px;
@@ -7,32 +6,22 @@
   justify-content: center;
   background: #efefef;
   background-color: #000033;
-  color: #e6e6ff;
-}
-.Button-area{
-  display: inline-block;
-}
+  color: #e6e6ff; }
 
 .App-buttonGeneretor {
-  margin-top: 32px;
-  width: 50%;
-}
+  margin-top: 32px; }
 
 .App-form {
-  margin-top: 32px;
-}
+  margin-top: 32px; }
 
-.Message{
-  padding: 10px;
-  margin-left: 30%;
-  width: 100%
-}
-.Message-list{
+.Message-list {
   list-style-type: none;
   font-size: 22px;
-  font-family:Verdana;
-}
-.span{
-  color:  #4d4dff
+  font-family: fantasy;
+  font-weight: bold; }
 
-}
+.Message {
+  margin-left: 40%; }
+
+.span {
+  color: #6666ff; }
