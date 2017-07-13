@@ -81,8 +81,7 @@ class App extends Component {
       })
     }
 
-    const generator = { ...this.state
-    }
+    const generator = { ...this.state}
     if (this.state.generator) {
       store.setState({
         generator: false
