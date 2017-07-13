@@ -14,19 +14,25 @@ export default class TextField extends React.Component{
     value: '',
   }
 
+
   render(){
+    let errorClass;
+    if(this.props.error){
+    errorClass = 'error'
+    }
     const {label,value} = this.props
     return(
     <label className='TextField'>
       <div>{label}</div>
       <input
-      className='TextField-label'
-      type='text'
-      value = {value}
-      onChange={this.handleChange.bind(this)}
+          className='TextField-label'
+          className={errorClass}
+          type='text'
+          value = {value}
+          onChange={this.handleChange.bind(this)}
       />
     </label>
-  )
+      )
   }
 
 

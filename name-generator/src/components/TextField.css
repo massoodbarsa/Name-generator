@@ -1,11 +1,18 @@
 .TextField {
   display: block;
   margin-top: 16px;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .TextField-label {
   margin: 8px;
   width: 50%;
   padding: 8px;
   font-size: 15px;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
+
+.error {
+  border: 2px dotted  #ff00bf
+
+}

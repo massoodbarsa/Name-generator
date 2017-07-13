@@ -3,6 +3,6 @@ export default {
     name: '',
     email: ''
   },
-  generator: false
-
+  generator: false,
+  error: false
 }

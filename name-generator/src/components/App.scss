@@ -2,35 +2,34 @@
 
 .App {
   position: relative;
-  padding:$padding-l;
+  padding: $padding-l;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #efefef;
   background-color: $primary-color;
-  color: $secondry-color
-
+  color: $secondry-color;
 }
 
-.App-buttonGeneretor{
+.App-buttonGeneretor {
   margin-top: $padding-l;
 }
 
-.App-form{
+.App-form {
   margin-top: $padding-l;
 }
 
-.Message-list{
+.Message-list {
   list-style-type: none;
   font-size: 22px;
   font-family: fantasy;
   font-weight: bold;
 }
-.Message{
-  margin-left: 40%
+
+.Message {
+  margin-left: 40%;
 }
-.span{
-  color: #6666ff
 
-
+.span {
+  color: #6666ff;
 }

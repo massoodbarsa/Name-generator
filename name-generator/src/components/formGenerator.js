@@ -18,19 +18,24 @@ export default class FormGenerator extends Component {
   }
 
   render() {
+
     return (
       <div className="formGenerator">
          <TextField
+           error={store.state.error}
            label='1.What is your name'
            value={this.state.name}
            onChange={this.handleChange.bind(this,'name')}/>
          <TextField
+           error={store.state.error}
            label='2.What is your email'
            value={this.state.email}
            onChange={this.handleChange.bind(this,'email')}/>
       </div>
     );
   }
+
+  
   handleChange(input,value){
    const form={...this.state}
    form[input]=value

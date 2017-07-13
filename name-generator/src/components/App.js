@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    if(this.state.generator===false){
+    if(this.state.generator===false||this.state.error===true){
     return (
       <div className="App">
         <Header/>
@@ -32,6 +32,7 @@ class App extends Component {
              label='Generator'
              onClick={this.onClickGenerator.bind(this)}
              generator={this.state.generator}
+             error={this.state.error}
            />
         </div>
 
@@ -40,8 +41,6 @@ class App extends Component {
   }
 
   if(this.state.generator===true){
-
-
       return (
         <div className="App">
 
@@ -70,17 +69,36 @@ class App extends Component {
 
          )
      }
-
   }
-  onClickGenerator(){
-    const generator={...this.state}
-    if(this.state.generator) {
-        store.setState({generator:false})
-      }else{
-        store.setState({generator:true})
+
+
+  onClickGenerator() {
+    if (this.state.form.name === '' || this.state.form.email === '') {
+      this.onError()
+    } else {
+      store.setState({
+        error: false
+      })
+    }
+
+    const generator = { ...this.state
+    }
+    if (this.state.generator) {
+      store.setState({
+        generator: false
+      })
+    } else {
+      store.setState({
+        generator: true
+      })
     }
   }
 
+  onError = () => {
+    store.setState({
+      error:true
+    })
+  }
 
 }
 
