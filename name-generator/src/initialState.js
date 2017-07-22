@@ -1,8 +1,12 @@
 export default {
   form: {
     name: '',
-    email: ''
+    email: '',
+    radio:'Classic'
+
   },
   generator: false,
-  error: false
+  error: false,
+  companyName:'',
+  loading:false
 }

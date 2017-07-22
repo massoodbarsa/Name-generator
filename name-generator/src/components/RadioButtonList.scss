@@ -1,0 +1,13 @@
+@import "../variables";
+
+
+.RadioButtonList{
+  ul{
+    padding-left: 0;
+  }
+  li{
+    list-style-type: none;
+    display: inline-flex;
+    padding: $padding-xs
+  }
+}

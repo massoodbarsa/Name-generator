@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import store from '../store';
 import TextField from './TextField'
 import './formGenerator.css';
+import RadioButtonList from './RadioButtonList'
 
 export default class FormGenerator extends Component {
 
@@ -31,15 +32,26 @@ export default class FormGenerator extends Component {
            label='2.What is your email'
            value={this.state.email}
            onChange={this.handleChange.bind(this,'email')}/>
+
+        <RadioButtonList
+           radio={this.state.radio}
+           handleRadioChange={this.handleRadioChange.bind(this)}
+        />
       </div>
     );
   }
 
-  
+
   handleChange(input,value){
    const form={...this.state}
    form[input]=value
    store.setState({form})
 
+  }
+
+  handleRadioChange(value){
+    const form=[...this.state]
+    form['radio']=value
+    store.setState({form})
   }
 }
