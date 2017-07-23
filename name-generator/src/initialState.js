@@ -5,8 +5,7 @@ export default {
     radio:'Classic'
 
   },
-  generator: false,
   error: false,
-  companyName:'',
+  companyName:null,
   loading:false
 }

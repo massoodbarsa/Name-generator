@@ -50,8 +50,8 @@ export default class FormGenerator extends Component {
   }
 
   handleRadioChange(value){
-    const form=[...this.state]
-    form['radio']=value
+    const form={...this.state}
+    form.radio=value
     store.setState({form})
   }
 }
