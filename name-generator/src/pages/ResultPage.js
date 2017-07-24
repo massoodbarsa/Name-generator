@@ -2,6 +2,7 @@ import React from 'react';
 import {Header, ButtonGenerator} from '../components'
 import store from '../store';
 import * as actions from '../actions';
+import '../pages/ResultPage.css'
 
 
 
@@ -22,21 +23,32 @@ export default class ResultPage extends React.Component{
         <Header/>
         <div className="Message-list">
           <div className="Message">
-            {this.state.companyName}
+            <span className="span">{this.state.companyName}</span>
           </div>
         </div>
-        <div className='App-buttonGeneretor'>
+        <div className='ResultPage-button'>
           <ButtonGenerator
             label='Refresh'
             onClick={this.onClickRefresh.bind(this)}
           />
         </div>
+        <div className='Retry-button'>
+          <ButtonGenerator
+            label='Retry'
+            onClick={this.onClicRetry.bind(this)}
+          />
+        </div>
+
       </div>
     )
   }
 
   onClickRefresh(){
     actions.refresh();
+  }
+
+  onClicRetry(){
+    actions.generateName()
   }
 
 }

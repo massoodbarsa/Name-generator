@@ -30,13 +30,6 @@ class App extends Component {
       return <FormPage/>
     }
   }
-
-  onClickRefresh(){
-    actions.refresh();
-  }
-
-
-
 }
 
 

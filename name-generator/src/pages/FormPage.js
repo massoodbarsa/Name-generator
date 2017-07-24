@@ -36,6 +36,8 @@ export default class FormPage extends React.Component{
       </div>
     )
   }
+
+  
   onClickGenerator() {
 
     if (this.state.form.name === '' || this.state.form.email === '') {

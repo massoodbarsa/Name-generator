@@ -2,7 +2,7 @@ import store from '../store'
 import generateName from '../generateName'
 
 
-export default function  generateNameAction() {
+export default function retry() {
   store.setState({
     loading:true
   })
