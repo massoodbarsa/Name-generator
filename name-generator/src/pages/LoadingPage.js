@@ -1,9 +1,17 @@
 import React from 'react';
-import {Spinner} from '../components'
+import {Spinner,Header} from '../components'
 
 
 export default class LoadingPage extends React.Component{
   render(){
-      return <Spinner/>
+    return(
+    <div className="App">
+
+      <Header/>
+
+      <Spinner/>
+      
+    </div>
+  )
   }
 }
