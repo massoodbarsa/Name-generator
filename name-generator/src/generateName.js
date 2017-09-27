@@ -12,6 +12,6 @@ export default function(form){
 }
 
 function getMessage() {
-  let messages = ["Menyuch", "Djasus", "Mohandis"];
+  let messages = ["is happy", "is sad", "is ok"];
   return messages[Math.floor(Math.random() * messages.length)];
 }
